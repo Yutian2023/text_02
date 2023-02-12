@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width: 150px;
+				height: 150px;
+				background-color: #EA96D0;
+				margin-left: 550px;
+				margin-top: 200px;
+				border: #366825 solid 5px;
+			}
+			
+			#i1{
+				margin-left: 12px;
+				font-size: 20px;
+			}
+			
+			#i2{
+				margin-left: 30px;
+				font-size: 20px;
+			}
+			
+		</style>
+		<script>
+			function fun1(){
+				alert('Love you too.')
+				close()
+			}
+			
+			function fun2(){
+				var ele1 = document.getElementById('d1')
+				var top = Math.random()*390
+				var left = Math.random()*1000
+				ele1.style.marginTop = top+'px'
+				ele1.style.marginLeft = left+'px'
+			}
+		</script>
+	</head>
+	<body>
+		<div id="d1">
+			<h2>Do you love me?</h2>
+			<input type="button" value="Yes" onclick="fun1()" id='i1'/>
+			<input type="button" value="No" onmouseover="fun2()" id='i2'/>
+		</div>
+	</body>
+</html>
